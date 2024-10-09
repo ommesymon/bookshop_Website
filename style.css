@@ -1,0 +1,105 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F0F0F0; /* Light gray background */
+  color: black; /* Default text color */
+}
+
+/* Menu Styling */
+#menutop {
+  width: 100%;
+  background-color: #0066cc; /* Bright blue for the navigation bar */
+  padding: 15px 0;
+}
+
+#menutop ul {
+  list-style: none;
+  text-align: center; /* Center the menu items */
+}
+
+#menutop ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#menutop ul li a {
+  text-decoration: none;
+  color: #fff; /* White text for menu items */
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+#menutop ul li a:hover,
+#menutop li.current {
+  color: #ffcc00; /* Brighter color for hover */
+}
+
+/* Info Section (Bookshop Name and Quotes) */
+.info-section {
+  text-align: center; /* Center the text in the info section */
+  margin: 20px 0; /* Add margin around the section */
+}
+
+.bookshop-name {
+  color: #333333;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.bookshop-quote {
+  color: #000000;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.bookshop-quote-small {
+  color: #666666;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Head Image and Offers Section */
+.head-image {
+  background: url(bookss.JPG) no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center; /* Center the content */
+  align-items: center; /* Vertically center */
+  margin-top: 20px;
+}
+
+.offers {
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly darker background */
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 400px; /* Increase width */
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #menutop ul {
+      padding: 0;
+      text-align: center;
+  }
+
+  #menutop ul li {
+      display: block; /* Stack menu items on smaller screens */
+      margin-bottom: 10px;
+  }
+
+  .offers {
+      margin: 0 auto;
+  }
+
+  .head-image {
+      height: 200px; /* Reduce height on smaller screens */
+  }
+}
